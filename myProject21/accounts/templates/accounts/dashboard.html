@@ -1,0 +1,5 @@
+{% extends "accounts/base.html" %}
+{% block content %}
+<h2>Welcome to your Dashboard, {{ request.user.username}}!</h2>
+<p>Email: {{request.user.email }}</p>
+{% endblock %}
