@@ -1,0 +1,14 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+<h1>All Blog Posts</h1>
+<ul class="list-group">
+    {% for post in posts %}
+    <li class="list-group-item">
+        <a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a>
+    </li>
+    {% empty %}
+    <li class="list-group-item">No posts available.</li>
+    {% endfor %}
+</ul>
+{% endblock %}

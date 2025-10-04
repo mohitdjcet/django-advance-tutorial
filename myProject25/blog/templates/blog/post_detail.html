@@ -1,0 +1,11 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+<h2>{{ post.title }}</h2>
+<p>{{ post.content }}</p>
+
+
+<a class="btn btn-secondary" href="{% url 'post_list' %}">Back to all posts</a>
+<a class="btn btn-primary" href="{% url 'post_edit' post.pk %}">Edit Post</a>
+<a class="btn btn-danger" href="{% url 'post_delete' post.pk %}">Delete Post</a>
+{% endblock %}
