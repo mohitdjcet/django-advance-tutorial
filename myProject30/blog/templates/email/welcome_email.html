@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome Email</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background-color: #ffffff;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+        h2 {
+            color: #333333;
+        }
+        p {
+            color: #555555;
+            line-height: 1.6;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #eeeeee;
+            margin: 20px 0;
+        }
+        small {
+            color: #999999;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome , {{ username }}!</h2>
+        <p>Thank you for signing up. We're excited to have you on board!</p>
+        <p>Feel free to explore our platform and let us know if you have any questions.</p>
+        <p>You;re enrolled in the following {{ course }}:</p>
+        <hr>
+        <small> This is an automated message, please do not reply.</small>
+    </div>
+
+</body>
+</html>
+
