@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users - File Cache Demo</title>
+</head>
+<body>
+    <h2>Users Data (File-Based Cache Demo)</h2>
+    <table border="1" cellpadding="10">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Subscribers</th>
+        </tr>
+        {% for user in users %}
+        <tr>
+            <td>{{ user.name }}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.sub }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
+
