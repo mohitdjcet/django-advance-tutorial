@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>YouTube Users</title>
+</head>
+<body>
+    <h1>YouTube Users List</h1>
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Subscribers</th>
+        </tr>
+        {% for user in users %}
+        <tr>
+            <td>{{ user.name }}</td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.subscribers }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
+
